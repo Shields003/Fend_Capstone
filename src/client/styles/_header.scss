@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+    align-items: center;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 450px;
+    padding: 45px;
+    background: #09a309;;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+}
+
+.logo-text {
+    font-size: 40px;
+    font-weight: 500;
+}

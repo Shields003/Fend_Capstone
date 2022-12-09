@@ -1,0 +1,60 @@
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -235px;
+    z-index: 5;
+    position: relative;
+    border-radius: 10px;
+    padding: 35px;
+    background: rgba(7, 143, 48, 0.9);
+   
+    label {
+        margin-bottom: 15px;
+    }
+    &__destination,
+    &__departure-date {
+        flex: 1 1 auto;
+        & input {
+            margin-top: 4px;
+            height: 52px;
+            background: rgb(157, 162, 175);
+            border: 1px solid black;
+        }
+    }
+    &__btn-search {
+        border: 2px;
+        flex: 1 1 auto;
+        font-size: 16px;
+        align-self: flex-end;
+        color: rgb(199, 212, 203);
+        background: rgb(4, 64, 21);
+        justify-content: center;
+        padding: 18px 15px;
+        &:hover {
+            background: #ffc400;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .search-form {
+        padding: 50px;
+        label {
+            margin-bottom: 0;
+        }
+        &__destination {
+            flex: 1 1 50%;
+            max-width: 50%;
+        }
+        &__departure-date {
+            flex: 1 1 40%;
+            max-width: 30%;
+        }
+        &__btn-search {
+            flex: 1 1 15%;
+            max-width: 15%;
+        }
+    }
+}
